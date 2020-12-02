@@ -1,6 +1,6 @@
 function sumof2(array) {
   for (i=0; i<array.length-1; i++) {
-    for (j=1; j<array.length; j++) {
+    for (j=i+1; j<array.length; j++) {
       if(array[i] + array[j] === 2020) {
         return (array[i]*array[j])
       }
@@ -11,8 +11,8 @@ function sumof2(array) {
 
 function sumof3(array) {
   for (let i=0; i<array.length-2; i++) {
-    for (let j=1; j<array.length-1; j++) {
-      for (let k=2; k<array.length; k++){
+    for (let j=i+1; j<array.length-1; j++) {
+      for (let k=j+1; k<array.length; k++){
         if(array[i] + array[j] + array[k] === 2020) {
           return (array[i]*array[j]*array[k])
         }
