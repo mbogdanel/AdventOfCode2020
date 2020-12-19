@@ -7,12 +7,13 @@ fs.readFile('./input.txt', (err, data) => {
   }
   const stringInput = data.toString()
 
-  let arr = stringInput.split('\n\n')
+  let arr = stringInput.split('\r\n\r\n')
 
   // problem is here, need array with concat string.............................
-  const newArray = arr.map((part) => part.split('\n').join(''))
+  const newArray = arr.map((part) => part.split('\r\n').join(''))
 
-  console.log(newArray)
+  // console.log(newArray)
+  console.log(arr)
 
   function unique_char(string) {
     var unique = ''
